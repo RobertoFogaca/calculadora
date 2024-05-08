@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <section>
+            <div>
+                <input type="button" onclick="insert('3')" value="3">
+                <input type="button" onclick="insert('6')"  value="6">
+                <input type="button" onclick="insert('9')"  value="9">
+                <input type="button" onclick="insert('0')"  value="0">
+            </div>
+            <br>
+            <div>
+                <input type="button" onclick="insert('2')"  value="2">
+                <input type="button" onclick="insert('5')"  value="5">
+                <input type="button" onclick="insert('8')"  value="8">
+                <input type="button" onclick="insert('&lt;')"  class="sb-operacionais" value="<">
+            </div>
+            <br>
+            <div>
+                <input type="button" onclick="insert('1')"  value="1">
+                <input type="button" onclick="insert('4')"  value="4">
+                <input type="button" onclick="insert('7')"  value="7">
+                <input type="button" onclick="insert('-')"  class="sb-operacionais" value="–">
+            </div>
+            <br>
+            <div>
+                <input type="button" onclick="insert('.')"  class="sb-operacionais" value=".">
+                <input type="button" onclick="insert('+')"  class="sb-operacionais" value="+">
+                <input type="button" onclick="insert('/')"  class="sb-operacionais" value="÷">
+                <input type="button" onclick="insert('*')"  class="sb-operacionais" value="×">
+            </div>
+            <br>
+        </section>
+        <div class="final-button">
+            <input type="button" onclick="clearToDisplay()"  class="sb-operacionais2" value="C">
+            <input type="button" onclick="calculate()"  class="sb-operacionais2" value="=">
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
+    
